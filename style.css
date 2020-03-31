@@ -1,0 +1,207 @@
+<style>
+	#reset {
+		color: #fff; /* прозрачный цвет букв */
+		-webkit-text-stroke: 0.9px #c10020;
+		font-weight: bold;
+		font-size: 14pt;
+		  }
+	#tempbar {
+		color: #fff; /* прозрачный цвет букв */
+		-webkit-text-stroke: 1px #0F0;
+		font-weight: bold;
+		font-size: 14pt;
+		  }
+	#temp {
+		color: #6f0035; /* прозрачный цвет букв */
+		-webkit-text-stroke: 1px #ff8800;
+		font-weight: bold;
+		font-size: 30pt;
+		  }
+	#bar {
+		color: #1560bd; /* прозрачный цвет букв */
+		-webkit-text-stroke: 1px #afdafc;
+		font-weight: bold;
+		font-size: 30pt;
+		  }
+	#acp {
+		color: #000; /* прозрачный цвет букв */
+		-webkit-text-stroke: 1px #4d41f2;
+		font-weight: bold;
+		font-size: 30pt;
+		  }
+	#FON {
+		background: #000;
+		background: -webkit-linear-gradient(top left, #0A2333, #40DDC8);
+		background: -moz-linear-gradient(top left, #0A2333, #40DDC8);
+		background: linear-gradient(to bottom right, #00D9FF, #CF3476);
+		  }
+	#manager {
+        background: rgba(102, 102, 102, 0.5);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+		  }
+	#manager:target {display: block;}
+	#manager1 {
+        width: 380px;
+        height: 325px;
+        text-align: center;
+        padding: 15px;
+        border: 3px solid #00cccc;
+        border-radius: 100px;
+        color: #0000cc;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+		background: #0A2333;
+		background: -webkit-linear-gradient(top left, #0A2333, #40DDC8);
+		background: -moz-linear-gradient(top left, #0A2333, #40DDC8);
+		background: linear-gradient(to bottom right, #000, #01796f);
+		  }
+	#help {
+        background: rgba(102, 102, 102, 0.5);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+      }
+	#help:target {display: block;}
+	#help-1 {
+        background: rgba(102, 102, 102, 0.5);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+      }
+	#help-1:target {display: block;}
+	#help1 {
+        width: 380px;
+        height: 466px;
+        text-align: center;
+        padding: 15px;
+        border: 3px solid #0000cc;
+        border-radius: 10px;
+        color: #0000cc;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        background: #884535;
+	  }
+	#LVL {
+		text-align: left;
+		font-size: 14pt;  
+		font-weight: bold;
+		background-color: #FFFFFF
+	  }  
+	 
+	#cmd {
+		text-align: center;
+		font-size: 14pt;  
+		font-weight: bold;
+		background-color: #1BF711;
+		face: System;
+	  } 
+	.cross { cursor: crosshair; }
+	.help { cursor: help; }
+	#button-close {
+		text-decoration: none;
+		display: inline-block;
+		padding: 3px 15px;
+		top: -47;
+		right: 0;
+		bottom: 0;
+		left: 70;
+		position: relative;
+		overflow: hidden;
+		border: 2px solid #FF0033;
+		border-radius: 0px;
+		font-family: 'Montserrat', sans-serif; 
+		color: #fff;
+		transition: .2s ease-in-out;
+	  }
+	#button-close:before {
+		content: "";
+		background: linear-gradient(90deg, rgba(255,255,255,.1), rgba(255,255,255,.5));
+		height: 50px;
+		width: 50px;
+		position: absolute;
+		top: -8px;
+		left: -75px;
+		transform: skewX(-45deg);
+	  }
+	#button-close:hover {
+		color: #ff0000;
+	  }
+	#button-close:hover:before {
+		left: 150px;
+		transition: .5s ease-in-out;
+	  }	
+	.close {
+        display: inline-block;
+        border: 1px solid #0000cc;
+        color: #0000cc;
+        padding: 0 12px;
+        margin: 1px;
+        text-decoration: none;
+        background: #f2f2f2;
+        font-size: 12pt;
+        cursor:pointer;
+      }
+    .close:hover {background: #e6e6ff;}
+	.photo {
+		display: inline-block;
+		position: relative;
+		  }
+	.photo:hover::after {
+		content: attr(data-title);
+		position: absolute;
+		left: 0; right: 0; bottom: 5px;
+		z-index: 1;
+		background: rgba(0,42,167,0.6);
+		color: #fff;
+		text-align: center;
+		font-family: Arial, sans-serif;
+		font-size: 11px;
+		padding: 5px 10px;
+		border: 1px solid #333;
+		  }
+	#desk1 {
+        width: 570px;
+        height: 345px;
+        text-align: center;
+        padding: 15px;
+        border: 3px solid #0000cc;
+        border-radius: 10px;
+        color: #0000cc;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        background: url(https://bit.ly/2ynROod);
+		  }
+	#desk {
+        background: rgba(102, 102, 102, 0.5);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+      }
+	#desk:target {display: block;}
+</style>
